@@ -1,0 +1,744 @@
+@media(max-width: 1820px) {
+
+  /* header */
+  .header__logo {
+    margin-right: 95px;
+  }
+}
+
+@media(max-width: 1735px) {
+
+  /* header */
+  .header__logo {
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 1675px) {
+
+  /* header */
+  .header__wrap {
+    margin-bottom: 25px;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__nav {
+    margin-right: 0;
+  }
+
+  .header__buy-ticket {
+    display: none;
+  }
+
+  .header__buy-ticket--outwrap {
+    display: flex;
+    margin-inline: auto;
+  }
+}
+
+@media(max-width: 1633px) {
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* header */
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  /* catalog */
+
+  .catalog__painter-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .catalog__painter-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__painter-biography {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 1408px) {
+
+  /* gallery */
+
+  .gallery__content {
+    flex-direction: column;
+  }
+
+  .gallery__choosing-period {
+    margin-bottom: 30px;
+  }
+
+  .gallery__list-pictures {
+    margin: 0 auto;
+  }
+
+  /* contacts */
+
+  .contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  /* events */
+
+  .events__card {
+    padding-top: 215px;
+    width: calc((100% - (20px * var(--offsets))) / (var(--offsets) + 1));
+    background-size: 100%;
+  }
+
+  .events__place {
+    text-align: end;
+    font-weight: 400;
+  }
+
+  .events__date {
+    margin-bottom: 3px;
+    text-align: end;
+    font-weight: 400;
+  }
+
+  .events__card-content {
+    padding-left: 34px;
+    padding-right: 18px;
+    padding-top: 15%;
+    padding-bottom: 50px;
+    min-height: 467px;
+  }
+
+  .events__card-backgroubd--book-engraving {
+    background-image: url(../img/book-engraving-1024.png);
+  }
+
+  .events__card-background--discussion {
+    background-image: url(../img/discussion-1024.png);
+  }
+
+  .events__card-background--formation {
+    background-image: url(../img/formation-1024.png);
+  }
+}
+
+@media(width < 1240px) {
+
+  /* header */
+  .open-burger {
+    display: flex;
+  }
+
+  .header__logo {
+    margin-right: 390px;
+    order: 1;
+  }
+
+  .header__buy-ticket {
+    margin-inline: auto;
+    order: 2;
+  }
+
+  .header__nav {
+    order: 3;
+  }
+
+  .header__burger {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    width: 35px;
+    z-index: 5;
+  }
+
+  .header__burger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .header__burger-line {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: var(--white);
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .header__burger::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .header__burger.active:before {
+    top: 50%;
+    background-color: var(--viollet);
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  .header__burger.active .header__burger-line {
+    transform: scale(0);
+  }
+
+  .header__burger.active::after {
+    bottom: 50%;
+    background-color: var(--viollet);
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .header__nav-menu {
+    display: none;
+  }
+
+  .header__nav-burger {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 20px;
+    top: 107px;
+    right: 0;
+    height: 280px;
+    width: 190px;
+    overflow-y: auto;
+    z-index: 5;
+    background-color: var(--viollet);
+    animation: burgerAnimation 0.5s ease-in-out;
+  }
+
+  @keyframes burgerAnimation {
+    0% {
+      right: -25%;
+    }
+
+    100% {
+      right: 0;
+    }
+  }
+
+  .header__buy-ticket--outwrap {
+    display: none;
+  }
+
+  .header__buy-ticket {
+    display: flex;
+  }
+}
+
+@media(width < 1146px) {
+
+  /* hero */
+
+  .hero {
+    padding-top: 95px;
+    padding-bottom: 102px;
+  }
+
+  .hero__content {
+    min-height: 420px;
+  }
+
+  .main-title {
+    margin-bottom: 22px;
+  }
+
+  .hero__description {
+    max-width: 659px;
+  }
+
+  /* gallery */
+
+  .gallery__title {
+    margin-bottom: 16px;
+  }
+
+  /* catalog */
+
+  .catalog {
+    padding-bottom: 81px;
+  }
+
+  .catalog__painter-img {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .catalog__painter-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* events */
+
+  .events__card-content {
+    padding-top: 0;
+  }
+
+  /* projects */
+
+  .projects {
+    padding-top: 82px;
+    padding-bottom: 84px;
+  }
+
+  .projects__description {
+    margin-bottom: 20px;
+  }
+
+  .projects__partners {
+    gap: 28px;
+  }
+
+  /* contacts */
+
+  .contacts {
+    padding-bottom: 40px;
+  }
+
+  .contacts__showroom {
+    margin-bottom: 10px;
+  }
+
+  .contacts__adress {
+    font-size: 14px;
+    line-height: 136%;
+  }
+
+  .contacts__form-btn {
+    width: 343px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer-container {
+    align-items: center;
+  }
+
+  .footer__social-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media(max-width: 979px) {
+
+  /* header */
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__nav-burger {
+    gap: 30px;
+    height: 390px;
+  }
+
+  .header__buy-ticket {
+    display: none;
+  }
+
+  .header__menu-item--hidden {
+    display: block;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-top: 83px;
+    padding-bottom: 86px;
+  }
+
+  .hero__content {
+    min-height: 447px;
+  }
+
+  .hero__description {
+    max-width: 558px;
+  }
+
+  /* gallery */
+
+  .gallery__list-pictures {
+    gap: 34px;
+  }
+
+  .gallery__checkbox {
+    width: 150px;
+  }
+
+  /* catalog */
+
+  .catalog__painter-img {
+    margin-bottom: 30px;
+  }
+
+  .catalog__painter-dates-life {
+    margin-bottom: 8px;
+  }
+
+  /* events */
+
+  .events__list {
+    flex-direction: column;
+    --offsets: 0;
+  }
+
+  .events__card {
+    padding-top: 23%;
+  }
+
+  .events__card-backgroubd--book-engraving {
+    background-image: url(../img/book-engraving-768.svg);
+  }
+
+  .events__card-background--discussion {
+    background-image: url(../img/discussion-768.svg);
+  }
+
+  .events__card-background--formation {
+    background-image: url(../img/formation-768.svg);
+  }
+
+  .events__card-content {
+    padding-bottom: 30px;
+    min-height: 293px;
+  }
+
+  .events__card-title {
+    margin-bottom: 16px;
+  }
+
+  /* projects */
+
+  .projects {
+    padding-top: 100px;
+  }
+
+  .projects__description {
+    margin-bottom: 29px;
+  }
+
+  .projects__partners-title {
+    margin-bottom: 29px;
+  }
+
+  /* contacts */
+
+  .contacts__form {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .contacts__form-input {
+    width: 322px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__form-input:first-child {
+    margin-right: 23px;
+  }
+
+  .contacts__form-btn {
+    width: 317px;
+  }
+}
+
+@media(max-width:663px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* header */
+  .header__nav-burger {
+    top: 80px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-top: 49px;
+    padding-bottom: 50px;
+  }
+
+  .hero__content {
+    align-items: center;
+    min-height: 210px;
+  }
+
+  .main-title {
+    margin-bottom: 11px;
+    max-width: 290px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 87.5%;
+  }
+
+  .hero__description {
+    max-width: 290px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 133%;
+  }
+
+  .hero__button {
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  /* gallery */
+
+  .gallery {
+    padding-top: 51px;
+    padding-bottom: 47px;
+  }
+
+  .gallery__list-pictures {
+    flex-direction: column;
+  }
+
+  .gallery__list-pictures {
+    gap: 27px;
+  }
+
+  /* catalog */
+
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+
+  .catalog__description {
+    margin-bottom: 30px;
+  }
+
+  .catalog__painter-info:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .catalog__painter-img {
+    margin-bottom: 17px;
+  }
+
+  .catalog__painter-name {
+    margin-bottom: 8px;
+    max-width: 285px;
+  }
+
+  .catalog__painter-dates-life {
+    margin-bottom: 15px;
+  }
+
+  /* contacts */
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 49px;
+    gap: 20px;
+  }
+
+  .contacts__showroom {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 139%;
+  }
+
+  .contacts__form {
+    flex-direction: column;
+  }
+
+  .contacts__form-input {
+    margin-bottom: 20px;
+    width: 290px;
+    height: 40px;
+  }
+
+  .contacts__form-input:first-child {
+    margin-right: 0;
+  }
+
+  .contacts__form-btn {
+    justify-content: normal;
+    width: 128px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  .contacts__form-btn--hidden {
+    color: transparent;
+  }
+
+  .contacts__socialnetworks-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 178%;
+  }
+
+  .contacts__social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media(max-width:500px) {
+
+  /* header */
+  .header {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .header__logo,
+  .header__search-link {
+    margin-bottom: 6px;
+  }
+
+  .header__nav-burger {
+    top: 55px;
+  }
+
+  .header__menu-link {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  /* about-us */
+
+  .about-us {
+    padding-top: 51px;
+    padding-bottom: 41px;
+  }
+
+  .section-title {
+    margin-bottom: 11px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 136%;
+  }
+
+  .about-us__description {
+    max-width: 1080px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 200%;
+  }
+
+  /* events */
+
+  .events__list {
+    gap: 21px;
+  }
+
+  .events__card {
+    padding-top: 77%;
+  }
+
+  .events__card-content {
+    padding-left: 24px;
+    padding-bottom: 49px;
+    min-height: 460px;
+  }
+
+  .events__date {
+    margin-bottom: 7px;
+  }
+
+  .events__card-title {
+    margin-bottom: 5px;
+  }
+
+  .events__card-backgroubd--book-engraving {
+    background-image: url(../img/book-engraving-320.jpg);
+  }
+
+  .events__card-background--discussion {
+    background-image: url(../img/discussion-320.jpg);
+  }
+
+  .events__card-background--formation {
+    background-image: url(../img/formation-320.jpg);
+  }
+
+  /* projects */
+
+  .projects {
+    padding-top: 53px;
+    padding-bottom: 15px;
+  }
+
+  .projects__description {
+    margin-bottom: 20px;
+  }
+
+  .projects__partners-title {
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 178%;
+  }
+
+  .projects__partners {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding-top: 21px;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .footer__logo {
+    margin-right: 0;
+  }
+
+  .footer__socialnetworks-list {
+    margin-bottom: 16px;
+  }
+
+  .footer__social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
